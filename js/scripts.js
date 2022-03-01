@@ -9,3 +9,11 @@ let pokemonList = [
   { name: 'wartortle', height: 3.03, type: ['water'] },
   { name: 'blastoise', height: 5.03, type: ['water'] },
 ];
+
+for (let i=0; i < pokemonList.length; i++){
+  if (pokemonList[i].height >4){
+    document.write(pokemonList[i].name + pokemonList[i].height + " - Wow, that's big!")
+  }
+  else
+  document.write(pokemonList[i].name + pokemonList[i].height)
+}
