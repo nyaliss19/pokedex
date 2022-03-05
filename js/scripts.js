@@ -27,7 +27,7 @@ let pokemonRepository = (function () {
 
 pokemonRepository.getAll().forEach(function(pokemon) {
   if (pokemon.height > 6) {
-    document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ") - Whoa that's big!");
+    document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ") - Wow, that's big!");
   }
 
   else {
