@@ -12,17 +12,17 @@ let pokemonRepository = (function () {
   ];
 
   function add(pokemon) {
-      pokemonList.push(pokemon);
-    }
+    pokemonList.push(pokemon);
+  }
 
-    function getAll() {
-      return pokemonList;
-    }
+  function getAll() {
+    return pokemonList;
+  }
 
-    return {
-      add: add,
-      getAll: getAll
-    };
+  return {
+    add: add,
+    getAll: getAll
+  };
 })();
 
 pokemonRepository.getAll().forEach(function(pokemon) {
