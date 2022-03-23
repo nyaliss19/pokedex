@@ -25,12 +25,24 @@ let pokemonRepository = (function () {
   };
 })();
 
-pokemonRepository.getAll().forEach(function(pokemon) {
-  if (pokemon.height > 6) {
-    document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ") - Wow, that's big!");
-  }
+// // -- JAVASCRIPT --
+// let container = document.querySelector('.container');
+// container.innerHTML = '<button>Click Me</button>';
+// // console.log(container.innerHTML);
 
-  else {
-    document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ")");
-  }
+// if (pokemon.height > 6) {
+//   document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ") - Wow, that's big!");
+// }
+//
+// else {
+//   document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ")");
+
+pokemonRepository.getAll().forEach(function (pokemon) {
+  let mainList = document.querySelector('.pokemon-list');
+  let listItem = document.createElement('li');
+  let button = document.createElement('button');
+  button.innerText = pokemon.name;
+  button.classList.add('pokemon-button');
+  listItem.appendChild(button);
+  mainList.appendChild(listItem);
 });
