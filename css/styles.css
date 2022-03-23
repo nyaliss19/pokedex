@@ -14,3 +14,13 @@
 }
 
 
+.pokemon-button {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.pokemon-list {
+  margin-top: 80px;
+  list-style-type: none;
+}
