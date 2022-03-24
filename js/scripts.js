@@ -36,18 +36,6 @@ let pokemonRepository = (function () {
   };
 })();
 
-// // -- JAVASCRIPT --
-// let container = document.querySelector('.container');
-// container.innerHTML = '<button>Click Me</button>';
-// // console.log(container.innerHTML);
-
-// if (pokemon.height > 6) {
-//   document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ") - Wow, that's big!");
-// }
-//
-// else {
-//   document.write("<p>" + pokemon.name + " (height : " + pokemon.height + ")");
-
 pokemonRepository.getAll().forEach(function (pokemon) {
   pokemonRepository.addListItem(pokemon);
 });
