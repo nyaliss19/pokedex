@@ -75,6 +75,11 @@ let pokemonRepository = (function () {
       .catch(function (e) {
         console.error(e);
       });
+
+    item.types = [];
+    for (let i = 0; i < details.types.length; i++) {
+      item.types.push(details.types[i].type.name);
+    }
   }
 
   //modal
