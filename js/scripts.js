@@ -45,11 +45,12 @@ let pokemonRepository = (function () {
   }
 
   function addListItem(pokemon) {
-    let mainList = document.querySelector(".pokemon-list");
+    let mainList = document.querySelector(".list-group");
     let listItem = document.createElement("li");
-    let button = document.createElement("button");
+    let button = document.createElement("btn");
+    listItem.classList.add("group-list-item");
     button.innerText = pokemon.name;
-    button.classList.add("pokemon-button");
+    button.classList.add("btn");
     button.addEventListener("click", function () {
       showDetails(pokemon);
     });
