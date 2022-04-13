@@ -52,6 +52,8 @@ let pokemonRepository = (function () {
     listItem.classList.add("group-list-item");
     button.innerText = pokemon.name;
     button.classList.add("btn");
+    button.setAttribute("data-toggle", "modal");
+    button.setAttribute("data-target", "#exampleModal");
     button.addEventListener("click", function () {
       showDetails(pokemon);
     });
