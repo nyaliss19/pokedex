@@ -1,11 +1,29 @@
+.modal img {
+  width: 45%;
+  height: auto;
   float: right;
 }
 
+.navbar {
+  background-color: #c41616;
+  margin-bottom: 5px;
 }
 
+.navbar-brand {
+  color: #fff;
+  font-weight: bolder;
 }
 
+.directions {
+  color: #fff;
+  font-style: italic;
+  font-size: 12px;
 }
 
+.list-group {
+  text-align: center;
 }
 
+body {
+  background-color: #f2f0f0;
+}
