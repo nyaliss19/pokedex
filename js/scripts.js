@@ -86,9 +86,6 @@ let pokemonRepository = (function () {
     let modalHeader = document.querySelector(".modal-header");
 
     //add the new modal content
-    let closeButtonElement = document.createElement("button");
-    closeButtonElement.classList.add("modal-close");
-    closeButtonElement.innerText = "X";
 
     let titleElement = document.createElement("h1");
     titleElement.innerText = pokemon.name;
@@ -106,7 +103,6 @@ let pokemonRepository = (function () {
     modalTitle.innerHTML = "";
     modalBody.innerHTML = "";
     modalTitle.appendChild(titleElement);
-    modalBody.appendChild(closeButtonElement);
     modalBody.appendChild(contentElement);
     modalBody.appendChild(secondElement);
     modalBody.appendChild(imageElement);
