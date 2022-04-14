@@ -103,6 +103,8 @@ let pokemonRepository = (function () {
     imageElement.classList.add("image-class");
     imageElement.setAttribute("src", pokemon.imageUrl);
 
+    modalTitle.innerHTML = "";
+    modalBody.innerHTML = "";
     modalTitle.appendChild(titleElement);
     modalBody.appendChild(closeButtonElement);
     modalBody.appendChild(contentElement);
