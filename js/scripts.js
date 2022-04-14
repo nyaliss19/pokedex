@@ -45,7 +45,6 @@ let pokemonRepository = (function () {
   }
 
   function addListItem(pokemon) {
-    // previous version
     let mainList = document.querySelector(".list-group");
     let listItem = document.createElement("li");
     let button = document.createElement("btn");
