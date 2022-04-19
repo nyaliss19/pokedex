@@ -1,10 +1,13 @@
 # pokedex
 
 This is a simple JS app
+The live version of the app is here - https://nyaliss19.github.io/pokedex/
 
 The scope of this project was to learn the basics of Javascript, including utilizing an API and pulling data from
 it.
 The app makes use of modals and buttons.
+
+The API can be found here - https://pokeapi.co/api/v2/pokemon/
 
 //
 In its current form (as of 4.16.2022), I find it to be functional but not complete.
